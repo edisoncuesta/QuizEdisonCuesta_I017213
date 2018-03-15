@@ -63,7 +63,10 @@
         </RelativeLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            ba
+            android:padding="10dp">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -120,8 +123,37 @@
         android:layout_height="match_parent"
         android:layou_weight="1"
         android:padding="20dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
+        </RelativeLayout>
 
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/holo_green_dark"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Historial de Transacciones"
+            android:background="@android:color/holo_green_dark"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mas"
+            android:background="@android:color/holo_green_dark"
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow"/>
+
+    </LinearLayout>
     </ScrollView>
 
     <android.support.design.widget.FloatingActionButton
@@ -130,6 +162,7 @@
         android:layout_gravity="bottom|end"
         android:src="@drawable/plus"
         android:layout_margin="16dp"/>
+
 
 
 </android.support.design.widget.CoordinatorLayout>
