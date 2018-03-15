@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.toshiba1.quizedisoncuesta_i017213.MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/relativeLayout">
+
+        <RelativeLayout
+            android:id="@+id/rl_section1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_imagenprofile"
+                android:layout_width="380dp"
+                android:layout_height="200dp"
+                android:background="@drawable/backgroundindex"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/tv_titleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FINANCIAR"
+                android:textColor="@android:color/white"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                >
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/num"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:id="@+id/valor2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mar-15-22,2018"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/valor"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_section1">
+
+            <TextView
+                android:id="@+id/tv_column1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingresos   +13%"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="15sp"
+                android:layout_alignParentLeft="true" />
+            <TextView
+                android:id="@+id/tv_subcolumn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$1.173.000"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="16sp"
+                android:layout_below="@id/tv_column1" />
+
+
+            <TextView
+                android:id="@+id/tv_column2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gastos  -37%"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="15sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/tv_subcolumn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$3.000.000"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="16sp"
+                android:layout_below="@id/tv_column2"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layou_weight="1"
+        android:padding="20dp">
+
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/plus"
+        android:layout_margin="16dp"/>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
